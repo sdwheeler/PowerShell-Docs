@@ -1,13 +1,13 @@
 ---
 title: What's New in PowerShell 7.7
 description: New features and changes released in PowerShell 7.7
-ms.date: 08/13/2026
+ms.date: 09/16/2026
 ---
 
 # What's New in PowerShell 7.7
 
-PowerShell 7.7.0-preview.4 includes the following features, updates, and breaking changes.
-PowerShell 7.7.0-preview.4 is built on the .NET 11.0.100-preview.6 runtime.
+PowerShell 7.7.0-preview.5 includes the following features, updates, and breaking changes.
+PowerShell 7.7.0-preview.5 is built on the .NET 11.0.0-rc.1 runtime.
 
 For a complete list of changes, see the [CHANGELOG][04] in the GitHub repository.
 
@@ -15,7 +15,7 @@ For a complete list of changes, see the [CHANGELOG][04] in the GitHub repository
 
 PowerShell 7.7 includes the following updated modules:
 
-- **Microsoft.PowerShell.PSResourceGet** v1.3.0-preview1
+- **Microsoft.PowerShell.PSResourceGet** v1.3.0-preview2
 - **PSReadLine** v2.4.5
 
 ## Breaking Changes
@@ -40,6 +40,7 @@ PowerShell 7.7 includes the following updated modules:
 
 ## Cmdlet improvements
 
+- Add `GetImportModuleCommand` method back and check for session restriction in `ShowCommand` ([#25557][25557])
 - Improve output file path determination for `Invoke-WebRequest` ([#27872][27872])
 - Improve `Authorization` header default and redirect behavior ([#27873][27873])
 - Add `New-TemporaryDirectory` cmdlet ([#27549][27549]) (Thanks @KirtiRamchandani!)
@@ -102,6 +103,7 @@ PowerShell 7.7 includes the following updated modules:
 
 ## Engine improvements
 
+- Handle MSIX installation specially when prepending to PATH ([#27782][27782])
 - Call `CodeGeneration.EscapeSingleQuotedStringContent` API in SyncCurrentLocationHandler
   ([#27874][27874])
 - Improve PowerShell Remoting Argument Validation ([#27870][27870])
@@ -176,6 +178,7 @@ PowerShell 7.7 includes the following experimental features.
 [26669]: https://github.com/PowerShell/PowerShell/pull/26669
 [26692]: https://github.com/PowerShell/PowerShell/pull/26692
 [26719]: https://github.com/PowerShell/PowerShell/pull/26719
+[25557]: https://github.com/PowerShell/PowerShell/pull/25557
 [26752]: https://github.com/PowerShell/PowerShell/pull/26752
 [26785]: https://github.com/PowerShell/PowerShell/pull/26785
 [26929]: https://github.com/PowerShell/PowerShell/pull/26929
@@ -191,6 +194,7 @@ PowerShell 7.7 includes the following experimental features.
 [27398]: https://github.com/PowerShell/PowerShell/pull/27398
 [27549]: https://github.com/PowerShell/PowerShell/pull/27549
 [27727]: https://github.com/PowerShell/PowerShell/pull/27727
+[27782]: https://github.com/PowerShell/PowerShell/pull/27782
 [27809]: https://github.com/PowerShell/PowerShell/pull/27809
 [27857]: https://github.com/PowerShell/PowerShell/pull/27857
 [27869]: https://github.com/PowerShell/PowerShell/pull/27869
